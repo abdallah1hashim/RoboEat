@@ -1,0 +1,144 @@
+:root {
+  --main-color: #198754;
+}
+body {
+  background-color: #f9f9f9;
+}
+p {
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+/* navbar */
+nav.navbar {
+  background-color: var(--main-color);
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+nav .phone-holder {
+  margin: auto 0;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  color: #ffffff8c;
+}
+.nav-link:hover {
+  color: #d2ffed;
+}
+.active {
+  color: white !important;
+}
+
+/* main */
+.angle-container {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  width: 20%;
+  height: 100%;
+}
+.angle-container:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.angle-container.left {
+  left: 0%;
+}
+.angle-container.right {
+  right: 0%;
+}
+.angle-container .fa-chevron-right,
+.angle-container .fa-chevron-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.crd {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  background-color: white;
+  padding: 10px;
+  border: #eee 1px solid;
+}
+.btn {
+  margin-top: 15px;
+}
+.like {
+  background-color: #0d6efd;
+  color: white;
+}
+.like:hover {
+  background-color: #0d6efd;
+  color: black;
+}
+.dislike {
+  background-color: #ff3d3d;
+  color: white;
+}
+.dislike:hover {
+  background-color: #ff3d3d;
+  color: black;
+}
+/* footer */
+footer {
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+}
+footer p {
+  padding: 5px;
+}
+footer p:last-child {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* contact us */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+form .input {
+  width: 100%;
+  border-radius: 5px;
+  border: hsl(0, 4%, 68%) 1px solid;
+  padding: 8px;
+}
+form p {
+  margin: 10px 0 5px;
+}
+form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: hsl(0, 4%, 68%) 1px solid;
+}
+form input[type="submit"] {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+  transition: 0.3s;
+}
+form input[type="submit"]:hover {
+  background-color: #0a4fb8;
+}
+input:focus {
+  outline: #3a7ce036 5px solid;
+}
+textarea:focus {
+  outline: #3a7ce036 5px solid;
+}
