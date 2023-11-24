@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>RoboEat</title>
   </head>
-
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -35,10 +34,10 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/aboutUs.html" class="nav-link">About Us</a>
+              <a href="/aboutUs.html" class="nav-link active">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="/ContactUs.html" class="nav-link active">Contact Us</a>
+              <a href="/ContactUs.html" class="nav-link">Contact Us</a>
             </li>
           </ul>
           <div class="phone-holder d-flex gap-2">
@@ -48,28 +47,35 @@
         </div>
       </div>
     </nav>
-    <form id="main-form">
-      <div class="container">
-        <div
-          class="alert alert-success mb-3"
-          style="display: none"
-          role="alert"
-          id="success_message"
-        >
-          Contact message was successfully sent!
-        </div>
-        <h1>Contact Us</h1>
-        <p class="label">Name</p>
-        <input name="name" type="text" class="input" />
-        <p class="label">Email</p>
-        <input name="email" type="email" class="input" />
-        <p class="label">phone</p>
-        <input name="phone" type="phone" class="input" />
-        <p class="label">message</p>
-        <textarea name="message" id="input" rows="5"></textarea>
-        <input id="submitBtn" type="submit" />
+    <div class="about">
+      <div class="about-text">
+        <h1>About Us</h1>
+        <p>
+          Welcome to RoboEat, where culinary excellence meets a warm and
+          inviting atmosphere. We are not just a restaurant; we are a
+          celebration of flavors, a blend of passion and creativity, and a place
+          where every meal is an unforgettable experience.
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target=""
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-    </form>
+      <img src="/pics/pngwing.com.png" alt="steak pic" />
+    </div>
     <footer>
       <p>&copy; 2023 Robogarden Inc.</p>
       <p>Made with ❤️ by Abdullah</p>
@@ -77,9 +83,11 @@
 
     <script src="/script/bootstrap.bundle.min.js"></script>
     <script src="/script/all.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="/script/script.js"></script>
   </body>
 </html>
