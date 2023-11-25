@@ -1,41 +1,53 @@
 :root {
   --main-color: #198754;
+  --dark-color: #181e1e;
 }
+
 body {
   background-color: #f9f9f9;
 }
+
 p {
   margin: 0;
 }
+
 .hidden {
   display: none;
 }
+
 a:visited {
   color: inherit;
 }
+
 /* navbar */
 nav.navbar {
   background-color: var(--main-color);
   color: white;
 }
+
 .navbar-brand {
   color: white;
 }
+
 .navbar-brand:hover {
   color: white;
 }
+
 nav .phone-holder {
   margin: auto 0;
   padding: 8px;
   justify-content: center;
   align-items: center;
 }
+
 .nav-link {
   color: #ffffff8c;
 }
+
 .nav-link:hover {
   color: #d2ffed;
 }
+
 .active {
   color: white !important;
 }
@@ -44,6 +56,7 @@ nav .phone-holder {
 .phone-holder {
   text-align: left;
 }
+
 .angle-container {
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -53,15 +66,19 @@ nav .phone-holder {
   width: 20%;
   height: 100%;
 }
+
 .angle-container:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+
 .angle-container.left {
   left: 0%;
 }
+
 .angle-container.right {
   right: 0%;
 }
+
 .angle-container .fa-chevron-right,
 .angle-container .fa-chevron-left {
   position: absolute;
@@ -79,58 +96,76 @@ nav .phone-holder {
   padding: 10px;
   border: #eee 1px solid;
 }
+
 .btn {
   margin-top: 15px;
 }
+
 .like {
   background-color: #0d6efd;
   color: white;
 }
+
 .like:hover {
   background-color: #0d6efd;
   color: black;
 }
+
 .dislike {
   background-color: #ff3d3d;
   color: white;
 }
+
 .dislike:hover {
   background-color: #ff3d3d;
   color: black;
 }
+
 /* footer */
 footer {
   background-color: var(--main-color);
   text-align: center;
   color: white;
 }
+
+.about footer {
+  background-color: transparent;
+}
+
 footer p {
   padding: 5px;
 }
+
 footer p:last-child {
   color: rgba(255, 255, 255, 0.8);
 }
+
 /* contact us */
 form {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  height: calc(100vh - 155px);
 }
+
 form .input {
   width: 100%;
   border-radius: 5px;
   border: hsl(0, 4%, 68%) 1px solid;
   padding: 8px;
 }
+
 form p {
   margin: 10px 0 5px;
 }
+
 form textarea {
   width: 100%;
   padding: 5px;
   border-radius: 5px;
   border: hsl(0, 4%, 68%) 1px solid;
 }
+
 form input[type="submit"] {
   background-color: #0d6efd;
   color: white;
@@ -139,42 +174,125 @@ form input[type="submit"] {
   border: none;
   transition: 0.3s;
 }
+
 form input[type="submit"]:hover {
   background-color: #0a4fb8;
 }
+
 input:focus {
   outline: #3a7ce036 5px solid;
 }
+
 textarea:focus {
   outline: #3a7ce036 5px solid;
 }
+
 /* about */
 .about {
+  background: rgb(24, 30, 30);
+  background: linear-gradient(90deg, rgba(24, 30, 30, 1) 0%, rgba(46, 46, 46, 0.9136904761904762) 49%, rgba(0, 212, 255, 0) 100%);
   position: relative;
-  height: calc(100vh - 124px);
+  overflow: hidden;
+  color: var(--main-color);
+  padding: 50px;
 }
-.about img {
-  max-width: 100%;
+
+.about h1 {
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 28px;
+}
+
+.about .img-holder {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
+
+.about .img-holder img {
+  max-width: 100%
+}
+
 .about-text {
   margin: auto 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: left;
+  align-items: center;
   height: fit-content;
-  color: black;
-  width: 50%;
-  /* background-color: rgba(0, 0, 0, 0.39); */
-  padding: 50px;
+  width: 100%;
+  padding: 20px 50px 50px;
 }
-.about-text ul {
+
+.about-text p {
+  width: 50%;
+  font-weight: 700;
+  line-height: 1.8;
+  font-size: 17px
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 77px;
+  text-align: center;
+}
+
+.about ul {
   list-style: none;
   display: flex;
   width: fit-content;
   gap: 15px;
   font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.about ul a {
+  color: white;
+  transition: 0.3s;
+}
+
+.about ul a:hover {
+  color: #9d9d9d;
+}
+
+.special-list {
+  color: white;
+  font-family: 'Teko', sans-serif;
+}
+
+
+@media (max-width: 992px) {
+  .about .img-holder {
+    display: none;
+  }
+
+  .about-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .about h1 {
+    text-align: center;
+  }
+
+  .about-text {
+    padding-left: 28px;
+  }
+
+  .about-text p {
+
+    width: 100%
+  }
 }
